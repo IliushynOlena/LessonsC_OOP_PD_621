@@ -123,14 +123,16 @@ public:
 int main()
 {
     Student st;
-    st.Init();
+   /* st.Init();
     st.Print();
+
     st.setX(100);
     st.setX(100);
     st.setX(100);
+
     st.getX();
     st.getX();
-    st.getX();
+    st.getX();*/
 
 
     st.setName("Ivan") ;
