@@ -12,6 +12,19 @@ struct Date
 			<< month << "/" << year << endl;
 	}
 };
+class Human {
+	string name;
+	int age;
+	Human()
+	{
+
+	}
+	~Human()
+	{
+
+	}
+	
+};
 class Student
 {
 	string name;
