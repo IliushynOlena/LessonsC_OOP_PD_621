@@ -70,22 +70,7 @@ public:
 		countMarks = 0;
 		averageMark = 0;
 	}
-	void AddMark(int mark)
-	{
-		int* temp = new int[countMarks + 1];
-		for (int i = 0; i < countMarks; i++)
-		{
-			temp[i] = marks[i];
-		}
-		temp[countMarks] = mark;
-		if (marks != nullptr)
-			delete[]marks;
-		marks = temp;
-		countMarks++;
-		AverageMark();
-
-
-	}	
+	void AddMark(int mark);
 	void Print()
 	{
 		cout << "Name : " << name << endl;
@@ -101,19 +86,12 @@ public:
 		cout << "\nAverage Mark : " << averageMark << endl;	
 
 	}
-	void setName(string name){this->name = name;}
+
+	//void setName(string name);//prototype 
+	void setName(string name) { this->name = name; }
+
 	void setLastName(string surname){this->surname = surname;}
-	void Initialization()
-	{
-		name = "no name";
-		surname = "no surname";
-		middlename = "no middlename";
-		birthdate = { 1,1,1 };
-		phone = "no phone";
-		marks = nullptr;
-		countMarks = 0;
-		averageMark = 0;
-	}
+	void Initialization();
 	~Student()
 	{
 		cout << "Destructor" << name << endl;
@@ -160,5 +138,32 @@ int main()
 		test.Print();
 	}
 	
+}
+
+void Student::AddMark(int mark)
+{
+	int* temp = new int[countMarks + 1];
+	for (int i = 0; i < countMarks; i++)
+	{
+		temp[i] = marks[i];
+	}
+	temp[countMarks] = mark;
+	if (marks != nullptr)
+		delete[]marks;
+	marks = temp;
+	countMarks++;
+	AverageMark();
+}
+
+void Student::Initialization()
+{
+	name = "no name";
+	surname = "no surname";
+	middlename = "no middlename";
+	birthdate = { 1,1,1 };
+	phone = "no phone";
+	marks = nullptr;
+	countMarks = 0;
+	averageMark = 0;
 }
 

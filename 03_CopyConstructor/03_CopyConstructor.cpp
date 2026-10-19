@@ -38,6 +38,7 @@ public:
 		{
 			this->marks[i] = other.marks[i];
 		}
+	
 	}
 	//setter or getter
 	void AddMark(int mark)
@@ -74,10 +75,27 @@ public:
 	{
 		Delete();
 	}
+}; 
+class Array
+{
+	long* arr;
+	int size;
+
+};
+struct Vagon {
+	int number;
+	int places;
+	int passangers;
+};
+class Train {
+	string model;
+	Vagon* vagons;
+	int countVagons;
 };
 int main()
 {
-	Student st;
+	int a;//змінна 
+	Student st;//об*єкт
 	st.Print();
 
 	Student student("Ivan", 18);
@@ -130,4 +148,6 @@ int main()
 	int* dataPtr{ nullptr };*/
 
 }
+
+
 
