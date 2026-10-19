@@ -127,8 +127,22 @@ void Print(string name)
 }
 void Test(int a){}
 
-class Book {
-    void Print(){}
+class Book 
+{
+private:
+    string title;
+public:
+    string getName()
+    {
+        return title;
+    }
+    void Print()
+    {
+        cout << "Title : " << title << endl;
+        cout << "Title : " << title << endl;
+        cout << "Title : " << title << endl;
+        cout << "Title : " << title << endl;
+    }
 };
 
 class Library
@@ -143,7 +157,11 @@ public:
     }
     void PrintAllBook()
     {
-
+        for (int i = 0; i < countBooks; i++)
+        {
+            cout << books[i].getName() << endl;;
+            books[i].Print();
+        }
     }
     void PrintBookAnyAuthor(string a){}
 };
