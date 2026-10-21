@@ -22,6 +22,7 @@ public:
     }
     int getDay()const
     {
+
         return day;
     }
     void Print()const
@@ -167,7 +168,8 @@ public:
 };
 int main()
 {
-    //Print("khsfjksd");
+    
+    //Print("khsfjksdd");
     //Print(77);
     //Test(100);
     //Test("ksdgskdjg");

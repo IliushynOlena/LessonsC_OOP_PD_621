@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_DelegationInnlineMethods
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_ConstExplicit", "05_ConstExplicit\05_ConstExplicit.vcxproj", "{F7826FB3-91E3-4355-8BB2-F90FA1697672}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_OverloadOperators", "06_OverloadOperators\06_OverloadOperators.vcxproj", "{14DB36A5-DF22-401B-B7C8-310165E0C683}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{F7826FB3-91E3-4355-8BB2-F90FA1697672}.Release|x64.Build.0 = Release|x64
 		{F7826FB3-91E3-4355-8BB2-F90FA1697672}.Release|x86.ActiveCfg = Release|Win32
 		{F7826FB3-91E3-4355-8BB2-F90FA1697672}.Release|x86.Build.0 = Release|Win32
+		{14DB36A5-DF22-401B-B7C8-310165E0C683}.Debug|x64.ActiveCfg = Debug|x64
+		{14DB36A5-DF22-401B-B7C8-310165E0C683}.Debug|x64.Build.0 = Debug|x64
+		{14DB36A5-DF22-401B-B7C8-310165E0C683}.Debug|x86.ActiveCfg = Debug|Win32
+		{14DB36A5-DF22-401B-B7C8-310165E0C683}.Debug|x86.Build.0 = Debug|Win32
+		{14DB36A5-DF22-401B-B7C8-310165E0C683}.Release|x64.ActiveCfg = Release|x64
+		{14DB36A5-DF22-401B-B7C8-310165E0C683}.Release|x64.Build.0 = Release|x64
+		{14DB36A5-DF22-401B-B7C8-310165E0C683}.Release|x86.ActiveCfg = Release|Win32
+		{14DB36A5-DF22-401B-B7C8-310165E0C683}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
