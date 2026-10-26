@@ -106,12 +106,14 @@ public:
     {
         arr[index] = num;
     }
-    void display(int index)const
-    {
-        cout << arr[index] << " ";
-    }
+    void display(int index)const;
 
 };
+
+void Array::display(int index)const
+{
+    cout << arr[index] << " ";
+}
 
 
 void PrintArray(const Array &arr)

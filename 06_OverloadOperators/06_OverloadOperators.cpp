@@ -76,8 +76,6 @@ public:
        return *this;
    }
 #pragma endregion
-
-
 #pragma region Uno Operators
    Point operator -()const
    {
