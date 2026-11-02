@@ -67,6 +67,8 @@ public:
 
 };
 */
+
+// LIFO   or FILO
 class Stack {
 private:
 	enum {EMPTY = -1};
