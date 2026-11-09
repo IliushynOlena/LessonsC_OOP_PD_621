@@ -92,9 +92,24 @@ class Vector
 	//Point* points;
 	List<Point> points;
 	int size;
-	void AddPoint()
+	void AddPointToHead(Point p)
 	{
-		
+		points.AddToHead(p);
+	}
+	void AddPointToTail(Point p)
+	{
+		points.AddToTail(p);
+	}
+	void DeletePointFromHead()
+	{
+		//pints.DeleteFromHead();
+	}
+	void DeletePointFromTail()
+	{
+		points.DeleteFromTail();
+	}
+	void Print() {
+		points.Print();
 	}
 };
 
