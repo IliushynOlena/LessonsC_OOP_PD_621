@@ -40,7 +40,7 @@ public:
 	PoliceCar() : soundVolume(0), Car() {}
 	PoliceCar(string n, int y,float v, int sound) : soundVolume(sound),
 		Car(n,y,v) {}
-	void Drive()const 
+	void Drive()const override
 	{
 		cout << "I am a Police Car. I can drive with speed " << speed << " km/h" << endl;
 	}
