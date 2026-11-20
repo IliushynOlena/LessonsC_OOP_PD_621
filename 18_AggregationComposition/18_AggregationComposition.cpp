@@ -1,6 +1,22 @@
 #include <iostream>
 using namespace std;
 
+class Document {
+	string name;
+	string format;
+	int pages;
+public:
+	Document() :name("none"), format("none"), pages(0) {}
+	Document(string n, string f, int p) :name(n), format(f), pages(p) {}
+	void ShowInfo()const
+	{
+		cout << "--------------- Document : " << name << endl;
+		cout << "Format : " << format << endl;
+		cout << "Pages : " << pages << endl;
+	}
+
+};
+
 enum Type{None, Standart, XL, XXL};
 class Cartridge 
 {
@@ -67,8 +83,15 @@ public:
 	}
 	void PrintDocument()
 	{
-		cout << "Printing document......." << endl;
-		doc->ShowInfo();
+		if (doc != nullptr)
+		{
+			cout << "Printing document......." << endl;
+			doc->ShowInfo();
+		}
+		else {
+			cout << "No document" << endl;
+		}
+		
 	}
 	void PrintSettings()
 	{
@@ -82,22 +105,12 @@ public:
 	{
 		this->doc = doc;
 	}
-};
-class Document {
-	string name;
-	string format;
-	int pages;
-public:
-	Document() :name("none"), format("none"), pages(0) {}
-	Document(string n, string f, int p) :name(n), format(f), pages(p) {}
-	void ShowInfo()const
+	void Cancel()
 	{
-		cout << "--------------- Document : " << name << endl;
-		cout << "Format : " << format << endl;
-		cout << "Pages : " << pages << endl;
+		doc = nullptr;
 	}
-	
 };
+
 int main()
 {
 	Printer printer("Canon LBP2900", 300, 30, 50);
