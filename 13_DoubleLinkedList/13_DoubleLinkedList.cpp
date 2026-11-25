@@ -41,13 +41,13 @@ public:
     }
     void Print()
     {
-		//Node* current = head;//int i = 0
-		//while (current != nullptr)// i < 10
-		//{
-		//	cout << current->value << " ";
-		//	current = current->next;// i++
-		//}
-		//cout << endl;
+		Node* current = head;//int i = 0
+		while (current != nullptr)// i < 10
+		{
+			cout << current->value << " ";
+			current = current->next;// i++
+		}
+		cout << endl;
         for (Node* i = head; i != nullptr; i = i->next)
         {
             cout << i->value << " ";
